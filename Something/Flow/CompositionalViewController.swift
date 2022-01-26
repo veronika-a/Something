@@ -17,7 +17,7 @@ class CompositionalViewController: UIViewController {
         setupCollectionView()
     }
     
-    func setupCollectionView() {
+    private func setupCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .white
@@ -28,7 +28,7 @@ class CompositionalViewController: UIViewController {
         collectionView.dataSource = self
     }
     
-    func createLayout1() -> UICollectionViewLayout {
+    private func createLayout1() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
                                           heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -40,7 +40,7 @@ class CompositionalViewController: UIViewController {
         return layout
     }
     
-    func createLayout2() -> UICollectionViewLayout {
+    private func createLayout2() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
                                           heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -54,7 +54,7 @@ class CompositionalViewController: UIViewController {
         return layout
     }
     
-    func createLayout() -> UICollectionViewLayout {
+    private func createLayout() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.5))

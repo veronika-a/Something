@@ -44,7 +44,7 @@ class AdvancedViewController: UIViewController {
         reloadData()
     }
     
-    func configure<T: SelfConfiguringCell>(cellType: T.Type, with intValue: Int, for indexPath: IndexPath) -> T {
+    private func configure<T: SelfConfiguringCell>(cellType: T.Type, with intValue: Int, for indexPath: IndexPath) -> T {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else {
             fatalError("Error \(cellType)")
         }
@@ -63,7 +63,7 @@ class AdvancedViewController: UIViewController {
         })
     }
     
-    func reloadData() {
+    private func reloadData() {
         var snapshot = NSDiffableDataSourceSnapshot<SectionKind, Int>()
         let itemPerSection = 10
         SectionKind.allCases.forEach { (sectionKind) in

@@ -20,8 +20,8 @@ class MainTabBarController: UITabBarController {
         let advansedVC = AdvancedViewController()
         
         viewControllers = [
-            generateNavigationController(rootViewController: advansedVC, title: "advansed", image: .add),
             generateNavigationController(rootViewController: flowVC, title: "flow", image: .remove),
+            generateNavigationController(rootViewController: advansedVC, title: "advansed", image: .add),
             generateNavigationController(rootViewController: compositionalVC, title: "compositional", image: .add)
         ]
         
