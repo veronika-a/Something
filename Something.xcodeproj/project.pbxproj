@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		9413DE0027A007D50028DA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DDFF27A007D50028DA73 /* AppDelegate.swift */; };
 		9413DE0227A007D50028DA73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE0127A007D50028DA73 /* SceneDelegate.swift */; };
-		9413DE0427A007D50028DA73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE0327A007D50028DA73 /* ViewController.swift */; };
+		9413DE0427A007D50028DA73 /* CompositionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE0327A007D50028DA73 /* CompositionalViewController.swift */; };
 		9413DE0927A007D70028DA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9413DE0827A007D70028DA73 /* Assets.xcassets */; };
 		9413DE0C27A007D70028DA73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9413DE0A27A007D70028DA73 /* LaunchScreen.storyboard */; };
 		9413DE1427A009BA0028DA73 /* FlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE1327A009BA0028DA73 /* FlowViewController.swift */; };
-		9413DE1727A00AD80028DA73 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE1627A00AD80028DA73 /* MainTabBarViewController.swift */; };
+		9413DE1727A00AD80028DA73 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE1627A00AD80028DA73 /* MainTabBarController.swift */; };
+		9413DE1927A027580028DA73 /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE1827A027580028DA73 /* AdvancedViewController.swift */; };
+		9413DE1C27A03F750028DA73 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE1B27A03F750028DA73 /* UserCell.swift */; };
+		9413DE1E27A045110028DA73 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE1D27A045100028DA73 /* FoodCell.swift */; };
+		9413DE2027A045860028DA73 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413DE1F27A045860028DA73 /* SelfConfiguringCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9413DDFC27A007D50028DA73 /* Something.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Something.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9413DDFF27A007D50028DA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9413DE0127A007D50028DA73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9413DE0327A007D50028DA73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9413DE0327A007D50028DA73 /* CompositionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalViewController.swift; sourceTree = "<group>"; };
 		9413DE0827A007D70028DA73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9413DE0B27A007D70028DA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9413DE0D27A007D70028DA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9413DE1327A009BA0028DA73 /* FlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowViewController.swift; sourceTree = "<group>"; };
-		9413DE1627A00AD80028DA73 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		9413DE1627A00AD80028DA73 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9413DE1827A027580028DA73 /* AdvancedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
+		9413DE1B27A03F750028DA73 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		9413DE1D27A045100028DA73 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		9413DE1F27A045860028DA73 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +79,23 @@
 		9413DE1527A009C50028DA73 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				9413DE1A27A03F640028DA73 /* Cells */,
 				9413DE1327A009BA0028DA73 /* FlowViewController.swift */,
-				9413DE0327A007D50028DA73 /* ViewController.swift */,
-				9413DE1627A00AD80028DA73 /* MainTabBarViewController.swift */,
+				9413DE0327A007D50028DA73 /* CompositionalViewController.swift */,
+				9413DE1627A00AD80028DA73 /* MainTabBarController.swift */,
+				9413DE1827A027580028DA73 /* AdvancedViewController.swift */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		9413DE1A27A03F640028DA73 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9413DE1B27A03F750028DA73 /* UserCell.swift */,
+				9413DE1D27A045100028DA73 /* FoodCell.swift */,
+				9413DE1F27A045860028DA73 /* SelfConfiguringCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9413DE1727A00AD80028DA73 /* MainTabBarViewController.swift in Sources */,
-				9413DE0427A007D50028DA73 /* ViewController.swift in Sources */,
+				9413DE1727A00AD80028DA73 /* MainTabBarController.swift in Sources */,
+				9413DE1E27A045110028DA73 /* FoodCell.swift in Sources */,
+				9413DE0427A007D50028DA73 /* CompositionalViewController.swift in Sources */,
 				9413DE0027A007D50028DA73 /* AppDelegate.swift in Sources */,
 				9413DE1427A009BA0028DA73 /* FlowViewController.swift in Sources */,
 				9413DE0227A007D50028DA73 /* SceneDelegate.swift in Sources */,
+				9413DE1927A027580028DA73 /* AdvancedViewController.swift in Sources */,
+				9413DE1C27A03F750028DA73 /* UserCell.swift in Sources */,
+				9413DE2027A045860028DA73 /* SelfConfiguringCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,19 +8,21 @@
 import Foundation
 import UIKit
 
-class MainTabBarViewController: UITabBarController {
+class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         
-        let firstVC = FlowViewController()
-        let secondVC = ViewController()
+        let flowVC = FlowViewController()
+        let compositionalVC = CompositionalViewController()
+        let advansedVC = AdvancedViewController()
         
         viewControllers = [
-            generateNavigationController(rootViewController: firstVC, title: "First", image: .add),
-            generateNavigationController(rootViewController: secondVC, title: "Second", image: .remove)
+            generateNavigationController(rootViewController: flowVC, title: "flow", image: .remove),
+            generateNavigationController(rootViewController: advansedVC, title: "advansed", image: .add),
+            generateNavigationController(rootViewController: compositionalVC, title: "compositional", image: .add)
         ]
         
         
